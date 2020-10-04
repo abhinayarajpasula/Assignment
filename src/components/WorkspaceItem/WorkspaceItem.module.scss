@@ -1,0 +1,76 @@
+@mixin justifyContentSpaceBetween {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+@mixin alignItemsCenter {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: calc(100vw - 38rem);
+    padding: 2rem;
+}
+
+.flex1 {
+    @include justifyContentSpaceBetween;
+    margin-bottom: 3rem;
+}
+
+.flex2 {
+    @include justifyContentSpaceBetween;
+    width: 54rem;
+}
+
+.flex3 {
+    @include alignItemsCenter;
+    border: 1px solid grey;
+    padding: 1rem;
+}
+
+.flex4 {
+    @include justifyContentSpaceBetween;
+}
+
+.flex5 {
+    @include alignItemsCenter;
+}
+
+.flex6 {
+    @include alignItemsCenter;
+    justify-content: space-between;
+    width: 45rem;
+}
+
+.center {
+    @include flexCenter;
+}
+
+.alignSelfCenter {
+    align-self: center;
+}
+
+.plug {
+    border: 1px solid grey;
+    padding: 1rem;
+}
+
+.btZoom {
+    padding: 0 2rem;
+}
+
+.star {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+}
+
+.flexRow {
+    display: flex;
+}

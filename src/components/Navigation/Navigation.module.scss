@@ -1,0 +1,30 @@
+@mixin alignItemsCenter {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    @include alignItemsCenter;
+    background: #102A43;
+    width: 8rem;
+    justify-content: space-between;
+    flex-direction: column;
+    color: #FFFFFF;
+    padding: 2rem 0;
+}
+
+.mb3 {
+    margin-bottom: 3rem;
+}
+
+.alignColumnCenter {
+    @include alignItemsCenter;
+    flex-direction: column;
+}
+
+.rotate {
+    transform: rotate(-90deg);
+    position: relative;
+    left: -2rem;
+    overflow: hidden;
+}
